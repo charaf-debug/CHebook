@@ -1,0 +1,227 @@
+/* إعدادات عامة ومتغيرات الألوان */
+:root {
+    --primary: #0f172a; /* كحلي غامق */
+    --accent: #6366f1;  /* بنفسجي مزرق حديث */
+    --secondary: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--primary);
+}
+
+/* القائمة العلوية */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.dot { color: var(--accent); }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.btn-contact {
+    border: 2px solid var(--accent);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: var(--accent) !important;
+}
+
+.btn-contact:hover {
+    background: var(--accent);
+    color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.highlight { color: var(--accent); }
+
+.hero p {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+    transition: 0.3s;
+}
+
+.cta-button:hover { transform: translateY(-3px); }
+
+/* قسم الكتب */
+.container { padding: 4rem 5%; }
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* الفلاتر */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: none;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--secondary);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* الشبكة والبطاقات */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.book-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card:hover { transform: translateY(-10px); }
+
+.book-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.card-body { padding: 1.5rem; flex-grow: 1; }
+
+.category-tag {
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--primary);
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    padding: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.buy-btn {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover { background-color: var(--accent); }
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    margin-top: 3rem;
+    color: var(--secondary);
+}
+
+.payment-methods i {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: var(--primary);
+}
