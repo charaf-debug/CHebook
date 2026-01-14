@@ -1,13 +1,12 @@
-// 1. بيانات الكتب (تم دمج رقم هاتفك 212761650250 في جميع الروابط)
 const books = [
+    // Best Sellers & Finance
     {
         id: 1,
         title: "Atomic Habits",
         author: "James Clear",
         price: "150 DH",
         category: "Self-Help",
-        img: "https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20Atomic%20Habits%20PDF"
+        img: "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
     },
     {
         id: 2,
@@ -15,67 +14,197 @@ const books = [
         author: "Robert Kiyosaki",
         price: "120 DH",
         category: "Finance",
-        img: "https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20Rich%20Dad%20Poor%20Dad%20PDF"
+        img: "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg"
     },
     {
         id: 3,
-        title: "Clean Code",
-        author: "Robert C. Martin",
-        price: "350 DH",
-        category: "Tech",
-        img: "https://m.media-amazon.com/images/I/41xShlnTZTL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20Clean%20Code%20PDF"
-    },
-    {
-        id: 4,
         title: "The Psychology of Money",
         author: "Morgan Housel",
         price: "180 DH",
         category: "Finance",
-        img: "https://m.media-amazon.com/images/I/71TRUbcZikL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20The%20Psychology%20of%20Money%20PDF"
+        img: "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
     },
     {
-        id: 5,
+        id: 4,
         title: "The Alchemist",
         author: "Paulo Coelho",
         price: "100 DH",
         category: "Fiction",
-        img: "https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20The%20Alchemist%20PDF"
+        img: "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg"
     },
     {
-        id: 6,
+        id: 5,
         title: "Deep Work",
         author: "Cal Newport",
         price: "140 DH",
         category: "Self-Help",
-        img: "https://m.media-amazon.com/images/I/71SL8d+fBGL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20Deep%20Work%20PDF"
+        img: "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
     },
     {
-        id: 7,
-        title: "JavaScript: The Good Parts",
-        author: "Douglas Crockford",
-        price: "200 DH",
-        category: "Tech",
-        img: "https://m.media-amazon.com/images/I/7185e68f3iL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20JS%20Good%20Parts%20PDF"
-    },
-    {
-        id: 8,
+        id: 6,
         title: "Think and Grow Rich",
         author: "Napoleon Hill",
         price: "110 DH",
         category: "Finance",
-        img: "https://m.media-amazon.com/images/I/71UypkUjStL._AC_UF1000,1000_QL80_.jpg",
-        whatsappLink: "https://wa.me/212761650250?text=Salam,%20bghit%20nchri%20kitab%20Think%20and%20Grow%20Rich%20PDF"
+        img: "https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg"
+    },
+    // New Self-Help Collection
+    {
+        id: 7,
+        title: "The 7 Habits of Highly Effective People",
+        author: "Stephen R. Covey",
+        price: "160 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780743269513-L.jpg"
+    },
+    {
+        id: 8,
+        title: "Can't Hurt Me",
+        author: "David Goggins",
+        price: "170 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781544512280-L.jpg"
+    },
+    {
+        id: 9,
+        title: "How to Win Friends & Influence People",
+        author: "Dale Carnegie",
+        price: "130 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780671027032-L.jpg"
+    },
+    {
+        id: 10,
+        title: "The Power of Now",
+        author: "Eckhart Tolle",
+        price: "140 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg"
+    },
+    {
+        id: 11,
+        title: "Mindset: The New Psychology of Success",
+        author: "Carol S. Dweck",
+        price: "150 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780345472328-L.jpg"
+    },
+    {
+        id: 12,
+        title: "The Subtle Art of Not Giving a F*ck",
+        author: "Mark Manson",
+        price: "140 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg"
+    },
+    {
+        id: 13,
+        title: "12 Rules for Life",
+        author: "Jordan B. Peterson",
+        price: "180 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780345816023-L.jpg"
+    },
+    {
+        id: 14,
+        title: "Thinking, Fast and Slow",
+        author: "Daniel Kahneman",
+        price: "190 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780374275631-L.jpg"
+    },
+    {
+        id: 15,
+        title: "Man's Search for Meaning",
+        author: "Viktor E. Frankl",
+        price: "120 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780807014295-L.jpg"
+    },
+    {
+        id: 16,
+        title: "The 48 Laws of Power",
+        author: "Robert Greene",
+        price: "200 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780140280197-L.jpg"
+    },
+    {
+        id: 17,
+        title: "Ego Is the Enemy",
+        author: "Ryan Holiday",
+        price: "140 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781591847816-L.jpg"
+    },
+    {
+        id: 18,
+        title: "Grit",
+        author: "Angela Duckworth",
+        price: "160 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781501111105-L.jpg"
+    },
+    {
+        id: 19,
+        title: "The 5 AM Club",
+        author: "Robin Sharma",
+        price: "150 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781443456623-L.jpg"
+    },
+    {
+        id: 20,
+        title: "Start with Why",
+        author: "Simon Sinek",
+        price: "150 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781591846444-L.jpg"
+    },
+    {
+        id: 21,
+        title: "Limitless",
+        author: "Jim Kwik",
+        price: "170 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781401958237-L.jpg"
+    },
+    {
+        id: 22,
+        title: "Make Your Bed",
+        author: "William H. McRaven",
+        price: "100 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781455570249-L.jpg"
+    },
+    {
+        id: 23,
+        title: "You Are a Badass",
+        author: "Jen Sincero",
+        price: "130 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780762447695-L.jpg"
+    },
+    {
+        id: 24,
+        title: "Daring Greatly",
+        author: "Brené Brown",
+        price: "140 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9781592408412-L.jpg"
+    },
+    {
+        id: 25,
+        title: "Essentialism",
+        author: "Greg McKeown",
+        price: "140 DH",
+        category: "Self-Help",
+        img: "https://covers.openlibrary.org/b/isbn/9780804137386-L.jpg"
     }
 ];
 
-// 2. دالة عرض الكتب
 const container = document.getElementById('books-grid');
+const myPhoneNumber = "212761650250"; 
 
 function renderBooks(filter = 'all') {
     container.innerHTML = '';
@@ -85,6 +214,10 @@ function renderBooks(filter = 'all') {
         : books.filter(book => book.category === filter);
 
     filteredBooks.forEach(book => {
+        const message = `Hello! I am interested in buying the PDF version of *${book.title}*. Is it available?`;
+        const encodedMessage = encodeURIComponent(message);
+        const finalLink = `https://wa.me/${myPhoneNumber}?text=${encodedMessage}`;
+
         const card = `
             <div class="book-card">
                 <img src="${book.img}" alt="${book.title}" class="book-img">
@@ -95,8 +228,8 @@ function renderBooks(filter = 'all') {
                 </div>
                 <div class="card-footer">
                     <span class="price">${book.price}</span>
-                    <a href="${book.whatsappLink}" target="_blank" class="buy-btn btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> اطلب عبر واتساب
+                    <a href="${finalLink}" target="_blank" class="buy-btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
                     </a>
                 </div>
             </div>
@@ -105,7 +238,6 @@ function renderBooks(filter = 'all') {
     });
 }
 
-// 3. تفعيل الفلاتر
 function filterBooks(category) {
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => {
@@ -117,5 +249,4 @@ function filterBooks(category) {
     renderBooks(category);
 }
 
-// تشغيل الموقع
 renderBooks();
